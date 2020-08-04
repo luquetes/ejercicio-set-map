@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    width: 75%;
+    margin: auto;
+}
+
+#lista {
+    border-radius: 10px;
+    width: 100%;
+    height: min-content;
+    min-height: 300px;
+    margin: 1em 0;
+    box-shadow: -1px 13px 29px -6px #dddddd;
+}
+
+#lista p {
+    color: #dddddd;
+    margin: 1em;
+}
