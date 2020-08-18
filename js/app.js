@@ -29,11 +29,19 @@ Array3.map( numbers => {
   prueba.push(numbers * 2);
 })
 
-Array.from([prueba], x => x)
+// Array.from([prueba], x => x + x)
 console.log("Array con los valores multiplicados", prueba);
 
 /*Paso 3*/
 const divList = document.getElementById('lista');
 const newElement = document.createElement('ul');
-const newUl = divList.insertAdjacentElement('beforeend', newElement);
-const newLi = document.createElement('li');
+divList.appendChild(newElement)
+// const newUl = divList.insertAdjacentElement('beforeend', newElement);
+
+prueba.map(item => {
+  const newLi = document.createElement('li');
+  newLi.innerHTML = item
+  console.log(item)
+  console.log(newLi)
+  newElement.appendChild(newLi)
+})
