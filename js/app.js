@@ -41,7 +41,5 @@ divList.appendChild(newElement)
 prueba.map(item => {
   const newLi = document.createElement('li');
   newLi.innerHTML = item
-  console.log(item)
-  console.log(newLi)
   newElement.appendChild(newLi)
 })
